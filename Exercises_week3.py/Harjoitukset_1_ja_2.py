@@ -25,7 +25,7 @@ print(reversed_list)
 print("\n")
 
 
-sana = "ikkuna"
+sana = "vaalea"
 
 print(sana[1:9:2])
 
