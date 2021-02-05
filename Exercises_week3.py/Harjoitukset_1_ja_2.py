@@ -65,4 +65,23 @@ SANAT = ""
 while sanat != "stop":
     SANAT = SANAT + " " + sanat
     sanat = input("Syötä sanoja: (Lopeta syöttäminen kirjoittamalla 'stop') ")
-print (SANAT)
+print ("Syötit sanat:", SANAT)
+
+print("\n\n")
+
+# Harjoitus 5:
+# Pyydä käyttäjää syöttämään, monenko luvun keskiarvon tämä haluaa laskea.
+# Tämän jälkeen pyydä käyttäjää syöttämään näin monta lukua.
+# Laske lopuksi lukujen keskiarvo ja tulosta tämä käyttäjälle
+# num = int(input("Syötä numero "))
+
+num = int(input("Kuinka monen numeron keskiarvon haluat laskea:"))
+total_sum = 0
+
+for n in range(num):
+    numbers = float(input("Syötä numero: "))
+    total_sum += numbers
+
+avg = total_sum/num
+print("Lukujen keskiarvo on: ", avg)    
+
